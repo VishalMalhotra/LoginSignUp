@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/register_screen_1_segmented_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="1dp"
+
+        segmentedgroup:sc_corner_radius="28dp"
+        segmentedgroup:sc_tint_color="@color/colorApp">
+
+
+        <RadioButton
+            android:id="@+id/register_screen_radio_button_male"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:checked="true"
+
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/register_screen_radio_button_female"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+
+            android:textSize="18sp"
+            android:text="@string/Female" />
+        <RadioButton
+            android:id="@+id/register_screen_radio_button_other"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+
+            android:textSize="18sp"
+            android:text="@string/Others" />
+
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+</RelativeLayout>
