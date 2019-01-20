@@ -75,8 +75,8 @@ public class LoginActivity extends AppCompatActivity {
         } else if (mPasswordView.getText().toString().equalsIgnoreCase("")) {
             ShakeAnimation.shakeAnim(mPasswordView);
         } else {
-            Intent intentRegister = new Intent(LoginActivity.this, RegisterActivity.class);
-            startActivity(intentRegister);
+           /* Intent intentRegister = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intentRegister);*/
         }
     }
 
